@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl">
+<head>
+    <meta charset="utf-8" />
+    <title>angularJSRouting</title>
+
+    <!-- angularJSRouting references -->
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/foundation.min.css" rel="stylesheet" />
+</head>
+<body>
+    <p>Hello, your application is ready!</p>
+    <a ng-href="#/foo/sdjhfskdjfh">go here</a>
+    <div ng-view></div>
+    <error></error>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-resource.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/main.js"></script>
+    
+</body>
+</html>
