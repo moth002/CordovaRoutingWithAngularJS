@@ -36,16 +36,16 @@ app.controller("AppCtrl", ['$rootScope', function ($rootScope) {
     });
 }]);
 
-var viewCtrl = app.controller("ViewCtrl", ['$scope', '$route', function ($scope, $route) {
+var viewCtrl = app.controller("ViewCtrl", ['$scope', function ($scope) {
     $scope.model = {
         message: "I am a great app!!!"
     }
-
 }]);
 
 viewCtrl.loadData = function ($q, $timeout) {
     var defer = $q.defer();
     $timeout(function () {
+        //defer.resolve();
         defer.reject("your network is down");
     }, 5000);
     return defer.promise;
